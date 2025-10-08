@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('email')->unique();
-            $table->string('telefone')->nullable();
+            $table->string('telefone');
             $table->enum('kit_interesse', [1, 3, 5]);
             $table->timestamps();
         });
